@@ -52,9 +52,7 @@ def procesamiento_local(name, flags, client_local, client_remoto):
         if msg is None:
             continue
 
-        # Hay datos para leer, los consumo e imprimo en consola
-        print(f"mensaje recibido en thread {name}:")
-        print(f"{msg['topico']}: {msg['mensaje']}")
+        # Hay datos para leer y consumir
         topico = msg['topico']
         mensaje = msg['mensaje']
         
